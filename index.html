@@ -4,32 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Harper</title>
+    <title>Harper Homepage</title>
     <script src="https://kit.fontawesome.com/276b65d818.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Cabin|Oswald:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-            </ul>
-        </nav>
+    <header class="homeHeader">
+        <div class="navBar">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
+    
+            <span class="logo">Harper</span>
+    
+            <nav>
+                <ul>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
 
-        <span class="logo">Harper</span>
-
-        <nav>
-            <ul>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-
-        <img src="harper-assets/home-image-1.jpg" alt="A girl looking straight into the camera surrounded by pink and blue ballon">
-
-        <div class="title">
-            <h1>Harper</h1>
-            <img src="harper-assets/circle-text.png" alt="Curling text whose content is 'Everyday life with'">
+        <div class="headerContent">
+            <img class="headerFace" src="harper-assets/home-image-1.jpg" alt="A girl looking straight into the camera surrounded by pink and blue ballon">
+    
+            <div class="title">
+                <h1>Harper</h1>
+                <img src="harper-assets/circle-text.png" alt="Curling text whose content is 'Everyday life with'">
+            </div>
         </div>
     </header>
 
@@ -41,37 +47,45 @@
         </div>
     </section>
 
-    <section class="middleImage">
+    <section class="midImg">
         <img src="harper-assets/home-image-2.jpg" alt="A shot of a pink building with blue windows">
     </section>
 
-    <section class="middleNav">
-        <div class="middleNavContent">
+    <section class="midNav">
+        <div class="midNavContent">
             <div class="photos">
                 <a href="#"><i class="far fa-image"></i></a>
-                <h3>Photos</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto id eum omnis at repudiandae praesentium tenetur? Omnis harum dolore doloribus illo odit? In, quos cumque.</p>
+                <div class="midNavSub">
+                    <h3>Photos</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto id eum omnis at repudiandae praesentium tenetur? Omnis harum dolore doloribus illo odit? In, quos cumque.</p>
+                </div>
             </div>
 
             <div class="midAbout">
                 <a href="#about"><i class="fas fa-user"></i></a>
-                <h3>about</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto id eum omnis at repudiandae praesentium tenetur?
-                Omnis harum dolore doloribus illo odit? In, quos cumque.</p>
+                <div class="midNavSub">
+                    <h3>about</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto id eum omnis at repudiandae praesentium tenetur?
+                    Omnis harum dolore doloribus illo odit? In, quos cumque.</p>
+                </div>
             </div>
 
-            <div class="blog">
+            <div class="midBlog">
                 <a href="#"><i class="fas fa-tv"></i></a>
-                <h3>blog</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto id eum omnis at repudiandae praesentium tenetur?
-                Omnis harum dolore doloribus illo odit? In, quos cumque.</p>
+                <div class="midNavSub">
+                    <h3>blog</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto id eum omnis at repudiandae praesentium tenetur?
+                    Omnis harum dolore doloribus illo odit? In, quos cumque.</p>
+                </div>
             </div>
 
-            <div class="contact">
+            <div class="midContact">
                 <a href="#"><i class="fas fa-phone"></i></a>
-                <h3>contact</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto id eum omnis at repudiandae praesentium tenetur?
-                Omnis harum dolore doloribus illo odit? In, quos cumque.</p>
+                <div class="midNavSub">
+                    <h3>contact</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto id eum omnis at repudiandae praesentium tenetur?
+                    Omnis harum dolore doloribus illo odit? In, quos cumque.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -100,7 +114,9 @@
 
     <section class="journey">
         <div class="journeyContent">
-            <img src="harper-assets/home-image-5.jpg" alt="A wavy-hair lady with big smile on her face">
+            <div class="journyImg">
+                <img src="harper-assets/home-image-5.jpg" alt="A wavy-hair lady with big smile on her face">
+            </div>
 
             <div class="journeyPar">
                 <h2>Harper's journey</h2>
@@ -117,7 +133,7 @@
     </section>
 
     <footer>
-        <p>copyright © 2018 HakcerYou</p>
+        <p>Copyright © 2018 HakcerYou</p>
     </footer>
 </body>
 </html>

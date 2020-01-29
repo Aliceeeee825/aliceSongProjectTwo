@@ -4,9 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Contact</title>
+    <script src="https://kit.fontawesome.com/276b65d818.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Cabin|Oswald:400,700&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <header>
+        <div class="navBar">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
+            
+            <span class="logo">Harper</span>
+            
+            <nav>
+                <ul>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div> <!--nav bar ends here-->
+
+        <h1>contact me</h1>
+    </header>
+
+    <section class="contactMain">
+        <aside>
+            <div class="socialMedia">
+                <ul>
+                    <li>
+                        <a href="http://facebook.com">
+                            <i class="fa fa-facebook"></i>
+                            <span class="visuallyhidden">facebook</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="http://twitter.com">
+                            <i class="fa fa-twitter"></i>
+                            <span class="visuallyhidden">Twitter</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="http://linkedin.com">
+                            <i class="fab fa-linkedin-in"></i>
+                            <span class="visuallyhidden">Linkedin</span>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="http://instagram.com">
+                            <i class="fa fa-instagram"></i>
+                            <span class="visuallyhidden">Instagram</span>
+                        </a>
+                    </li>
+                </ul> 
+            </div> <!--social media ends here-->
+
+            <h3>info@email.com</h3>
+
+            <ul>
+                <li>123-456-7890</li>
+                <li>123 Queen Street West, Unit 10</li>
+                <li>Toronto, Ontario</li>
+                <li>M5V2D5</li>
+            </ul>
+        </aside>
+
+        <form action="">
+            <input type="text" placeholder="Name" id="name" name="name">
+            <label for="name" class="visuallyHidden">name</label>
+        
+            <input type="email" placeholder="Email address" id="email" name="email">
+            <label for="email" class="visuallyHidden">Emaill address</label>
+        
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+            <label for="message" class="visuallyHidden">message</label>
+        
+            <button type="submit">submit</button>
+        </form>
+    </section> <!--main content ends here-->
+
+    <footer>
+        <p>Copyright © 2018 HackerYou</p>
+    </footer>
 </body>
 </html>
