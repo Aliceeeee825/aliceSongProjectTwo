@@ -1,0 +1,99 @@
+//who styles
+.who{
+    background-color: $white;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.whoContent{
+    width: 60%;
+    padding: 5%;
+}
+
+
+//middle nav styles
+.midNav{
+    background-color: $white;
+}
+
+.midNavContent{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin:0 auto;
+    padding: 5% 0;
+}
+
+.photos,.midAbout,.midBlog,.midContact{
+        width: calc((100% - 3%) / 2);
+        display: flex;
+        align-items: flex-start;
+        a{
+            background-color: $navColor;
+            border-radius: 50%;
+            padding: 2%;
+            margin-right: 2%;
+        } //a ends here
+}
+
+.photos,.midBlog{
+    margin-right: 3%;
+}
+
+//about section
+.about{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 7%;
+    .ht,.ft{
+        width: 40%;
+    }
+    .aboutImg1, .aboutImg2{
+        width: 50%;
+    }
+}
+
+.aboutImg1{
+    position: relative;
+    top: -25%;
+    background-color:$picBg2;
+    box-shadow: -120px 20px $picBg2, 20px 20px $picBg2 ;
+}
+
+.aboutImg2{
+    box-shadow: 120px 20px $navColor, 20px 20px $navColor;
+}
+
+//journey styles
+.journeyContent{
+    background-color: $white;
+    padding: 5% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.journeyImg{
+    width: 30%;
+    img{
+        padding: 10%;
+    }
+}
+
+.journeyPar{
+    margin: 0 10%;
+    width: 70%;
+}
+
+// gallery
+.gallery{
+    padding: 5%;
+    display: flex;
+    justify-content: space-around;
+    img{
+        width: calc(90% / 3);
+    }
+}
+

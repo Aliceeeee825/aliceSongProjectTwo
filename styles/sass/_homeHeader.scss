@@ -1,0 +1,27 @@
+.homeHeader{
+    background-color: $navColor;
+}
+
+.headerContent{
+    position: relative;
+    height: 70vh;
+    img, h1{
+        position: absolute;
+    }
+
+    h1{
+        left: 50%;
+        top: 15%;
+    }
+} //header content end
+
+.headerFace{
+    width: 30%;
+    left: 10%;
+}
+
+.title img{
+    left: 66%;
+    top: 20%;
+    width: 8%;
+}
