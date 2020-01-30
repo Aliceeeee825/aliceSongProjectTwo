@@ -1,8 +1,10 @@
 //who styles
 .who{
     background-color: $white;
-    display: flex;
+    .wrapper{
+        display: flex;
     justify-content: flex-end;
+    }
 }
 
 .whoContent{
@@ -41,54 +43,61 @@
 }
 
 //about section
-.about{
+.about .wrapper{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    padding: 7%;
+    margin: 0 7%;
+    height: 120vh;
     .ht,.ft{
-        width: 40%;
+        width: 38%;
     }
     .aboutImg1, .aboutImg2{
-        width: 50%;
+        width: 52%;
+        position: relative;
     }
 }
 
 .aboutImg1{
-    position: relative;
-    top: -25%;
-    background-color:$picBg2;
+    top: -8%;
     box-shadow: -120px 20px $picBg2, 20px 20px $picBg2 ;
 }
 
 .aboutImg2{
+    bottom: -5%;
     box-shadow: 120px 20px $navColor, 20px 20px $navColor;
 }
 
 //journey styles
-.journeyContent{
+.journey{
     background-color: $white;
     padding: 5% 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    .wrapper
+    {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 80%;
+        margin: 0 auto;
+    }
+    
 }
 
 .journeyImg{
-    width: 30%;
+    width: 37%;
     img{
-        padding: 10%;
+        box-shadow: 10px 10px $picBg1;
     }
 }
 
 .journeyPar{
-    margin: 0 10%;
-    width: 70%;
+    margin: 0 3%;
+    width: 80%;
 }
 
 // gallery
-.gallery{
+.gallery .wrapper{
     padding: 5%;
     display: flex;
     justify-content: space-around;

@@ -80,6 +80,11 @@ img{
     display: block;
 }
 
+.wrapper{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
 .navBar{
     background-color: $navColor;
     display: flex;
@@ -99,3 +104,60 @@ img{
     }//logo ends here
 } 
 
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:$black;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: $black;
+    opacity:1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:$black;
+    opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color:$black;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+    color:$black;
+}
+::placeholder { /* Most modern browsers support this now. */
+    color:$black;
+    opacity: 1;
+}
+
+// form placeholder style
+// found this on stackflow (https://stackoverflow.com/questions/2610497/change-an-html5-inputs-placeholder-color-with-css)
+form{
+    width: 54%;
+    margin-right: 8%;
+    button{
+        width: 100%;
+        margin: 2% 0 15%;
+    }
+}
+
+input[type="text"],
+input[type='email'],
+textarea{
+    border: none;
+    padding: 4%;
+    color: $black;
+}
+
+input[type="text"],
+input[type='email']{
+    width: 48%;
+}
+
+input[type="text"]{
+    margin: 2% 1% 2% 0;
+}
+
+input[type="email"]{
+    margin: 2% 0 2% 2%;
+}
+
+textarea{
+    width: 100%;
+}

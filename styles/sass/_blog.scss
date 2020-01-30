@@ -1,0 +1,98 @@
+.blogHeader{
+    background-image: url('../harper-assets/blog-image-1.jpg');
+    background-size:cover;
+    height: 50vh;
+    position: relative;
+    h1{
+        margin: 0;
+        position: absolute;
+        bottom: -10%;
+        left: 10%;
+    }
+}
+
+
+.blogMain{
+    background: $white;
+    .blogTop{
+        display: flex;
+        justify-content: center;
+        width: 90%;
+    }
+}
+
+.sideBar{
+    width: 33%;
+    margin-top: 2.5%;
+}
+
+
+
+.top{
+    padding: 10%;
+    margin-top: 8%;
+    a{
+        color: $picBg1;
+        font-weight: bold;
+    }
+}
+
+.bottom {
+    padding: 5% 5% 10% 15%;
+    margin-top: 8%;
+    ul{
+        // margin-left: 16px;
+        li{
+        list-style-type: disc;
+        font-weight: normal;
+        text-transform: none;
+        text-align: left;
+        font-family: 'Cabin', sans-serif;
+        font-size: 20px;
+        line-height: 32px;;
+        }
+    }
+}
+
+.blogContent{
+    width: 60%;
+    background: white;
+    padding: 2%;
+    margin: 5% 2%;
+}
+
+.blogContent, .daisy{
+    border-bottom: 5px solid $picBg1;
+}
+
+.commentContent{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.maggie, .daisy{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    background: white;
+    padding: 2%;
+    margin: 1% 8%;
+    width: 54%;
+    p{
+        width: 75%;
+        margin-top:0;
+    }
+}
+
+.imgDiv{
+    width: 15%;
+}
+
+.blogForm{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+
