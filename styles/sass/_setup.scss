@@ -39,6 +39,7 @@ h3{
 
 h4{
     font-size: 24px;
+    margin: 0;
 }
 
 ul{
@@ -103,6 +104,10 @@ img{
         padding: 2% 5%;
     }//logo ends here
 } 
+
+.whiteNav a{
+    color: white;
+}
 
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     color:$black;

@@ -11,33 +11,35 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <header>
+    <div class="wrapper">
+        <div class="navBar">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                </ul>
+            </nav>
+            
+            <span class="logo">Harper</span>
+            
+            <nav>
+                <ul>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><span class="whiteNav"><a href="#">Contact</a></span></li>
+                </ul>
+            </nav>
+        </div> <!--nav bar ends here-->
+    </div> <!--wrapper ends-->
+
+    <header class="bCHeader contactHeader">
         <div class="wrapper">
-            <div class="navBar">
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="index.html#about">About</a></li>
-                    </ul>
-                </nav>
-                
-                <span class="logo">Harper</span>
-                
-                <nav>
-                    <ul>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </nav>
-            </div> <!--nav bar ends here-->
-    
             <h1>contact me</h1>
-        </div>
+        </div> <!--wrapper ends-->
     </header>
 
     <section class="contactMain">
-        <aside>
-            <div class="wrapper">
+        <div class="wrapper"> 
+            <aside class="contactAside">
                 <div class="socialMedia">
                     <ul>
                         <li>
@@ -70,18 +72,16 @@
                     </ul> 
                 </div> <!--social media ends here-->
     
-                <h3>info@email.com</h3>
+                <h4>info@email.com</h4>
     
-                <ul>
+                <ul class="contactInfo">
                     <li>123-456-7890</li>
                     <li>123 Queen Street West, Unit 10</li>
                     <li>Toronto, Ontario</li>
                     <li>M5V2D5</li>
                 </ul>
-            </div> <!--wrapper ends-->
-        </aside>
+            </aside>
 
-        <div class="wrapper">
             <form action="">
                 <input type="text" placeholder="Name" id="name" name="name">
                 <label for="name" class="visuallyhidden">name</label>
@@ -94,7 +94,7 @@
             
                 <button type="submit">submit</button>
             </form>
-        </div>
+        </div> <!--wrapper ends-->
     </section> <!--main content ends here-->
 
     <footer>

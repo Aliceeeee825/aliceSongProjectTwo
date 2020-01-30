@@ -258,6 +258,7 @@ h3 {
 
 h4 {
   font-size: 24px;
+  margin: 0;
 }
 
 ul {
@@ -334,6 +335,10 @@ img {
 
 .navBar .logo {
   padding: 2% 5%;
+}
+
+.whiteNav a {
+  color: white;
 }
 
 ::-webkit-input-placeholder {
@@ -413,6 +418,8 @@ textarea {
 .headerFace {
   width: 30%;
   left: 10%;
+  -webkit-box-shadow: 15px 15px white;
+          box-shadow: 15px 15px white;
 }
 
 .title img {
@@ -570,18 +577,21 @@ aside {
   background: white;
 }
 
-.blogHeader {
-  background-image: url("../harper-assets/blog-image-1.jpg");
+.bCHeader {
   background-size: cover;
   height: 50vh;
   position: relative;
 }
 
-.blogHeader h1 {
+.bCHeader h1 {
   margin: 0;
   position: absolute;
   bottom: -10%;
   left: 10%;
+}
+
+.blogHeader {
+  background-image: url("../harper-assets/blog-image-1.jpg");
 }
 
 .blogMain {
@@ -685,4 +695,60 @@ aside {
           justify-content: flex-end;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.contactHeader {
+  background-image: url("../harper-assets/contact-image-1.jpg");
+}
+
+.contactMain {
+  background-color: #F6F6F6;
+  margin: 0 auto;
+  padding-top: 5%;
+}
+
+.contactMain .wrapper {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contactMain form {
+  margin-left: 3%;
+}
+
+.contactAside {
+  padding: 3%;
+  margin-top: 1%;
+  height: 100%;
+}
+
+.contactAside h4 {
+  text-transform: none;
+  padding: 5% 0;
+}
+
+.socialMedia ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.socialMedia ul li {
+  padding-right: 10%;
+}
+
+.socialMedia ul li a {
+  color: #227284;
+  font-size: 20px;
+}
+
+.contactInfo li {
+  text-align: left;
+  font-weight: normal;
+  text-transform: none;
 }

@@ -1,0 +1,50 @@
+.contactHeader{
+    background-image: url('../harper-assets/contact-image-1.jpg');
+}
+
+.contactMain{
+    background-color: $white;
+    margin: 0 auto;
+    padding-top: 5%;
+    .wrapper{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+    }
+    form{
+        margin-left: 3%;
+    }
+}
+
+.contactAside{
+    padding: 3%;
+    margin-top: 1%;
+    height: 100%;
+    h4{
+        text-transform: none;
+        padding: 5% 0;
+    }
+}
+
+.socialMedia{
+    ul{
+        display: flex;
+        li{
+            padding-right: 10%;
+            a{
+                color: $picBg1;
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+.contactInfo{
+    li{
+        text-align: left;
+        font-weight: normal;
+        text-transform: none;
+    }
+}
+
+
