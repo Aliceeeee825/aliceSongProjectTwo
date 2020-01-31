@@ -1,0 +1,86 @@
+//responsive design for home page
+@media(max-width:1200px){
+    .title img{
+        display: none;
+    }
+}
+
+@include largerTablet{
+    .aboutImg1{
+        top: -13%
+    }
+
+    .aboutImg2{
+        bottom: -10%;
+    }
+
+    .journeyPar{
+        margin: 0 5%;
+    }
+}
+
+@include tabletSize{
+    h1{
+        font-size:60px
+    }
+
+    .headerContent h1{
+        left: 55%;
+    }
+
+    .headerFace{
+        top: 10%;
+        left: 11%;
+    }
+
+    .who .wrapper{
+        justify-content: center;
+        .whoContent{
+            text-align: center;
+            width: 80%;
+        }
+    }
+
+    .about .wrapper{
+        height: 200vh;
+    }
+
+    .aboutImg1, .aboutImg2{
+        width: 80%;
+        box-shadow: none;
+        position: static;
+    }
+
+    .aboutImg2{
+        order: 3;
+    }
+
+    .ft{
+        order: 4;
+    }
+
+    .ht,.ft{
+        width: 80%;
+        text-align: center;
+    }
+
+    .journey .wrapper{
+        flex-wrap: wrap;
+        text-align: center;
+        width: 82%;
+    }
+}
+
+@include phoneSize{
+    .headerContent{
+        display: flex;
+        flex-direction: column-reverse;
+        // flex-wrap: wrap;
+    }
+
+    .headerFace{
+        box-shadow: none;
+    }
+
+    
+}

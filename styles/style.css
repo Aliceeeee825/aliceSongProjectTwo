@@ -296,7 +296,7 @@ p {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
   display: block;
 }
 
@@ -395,6 +395,10 @@ input[type="email"] {
 
 textarea {
   width: 100%;
+}
+
+aside {
+  background: white;
 }
 
 .homeHeader {
@@ -497,11 +501,11 @@ textarea {
   height: 120vh;
 }
 
-.about .wrapper .ht, .about .wrapper .ft {
+.ht, .ft {
   width: 38%;
 }
 
-.about .wrapper .aboutImg1, .about .wrapper .aboutImg2 {
+.aboutImg1, .aboutImg2 {
   width: 52%;
   position: relative;
 }
@@ -571,10 +575,6 @@ footer {
 
 footer p {
   margin: 0;
-}
-
-aside {
-  background: white;
 }
 
 .bCHeader {
@@ -751,4 +751,89 @@ aside {
   text-align: left;
   font-weight: normal;
   text-transform: none;
+}
+
+@media (max-width: 1200px) {
+  .title img {
+    display: none;
+  }
+}
+
+@media (max-width: 940px) {
+  .aboutImg1 {
+    top: -13%;
+  }
+  .aboutImg2 {
+    bottom: -10%;
+  }
+  .journeyPar {
+    margin: 0 5%;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 60px;
+  }
+  .headerContent h1 {
+    left: 55%;
+  }
+  .headerFace {
+    top: 10%;
+    left: 11%;
+  }
+  .who .wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .who .wrapper .whoContent {
+    text-align: center;
+    width: 80%;
+  }
+  .about .wrapper {
+    height: 200vh;
+  }
+  .aboutImg1, .aboutImg2 {
+    width: 80%;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    position: static;
+  }
+  .aboutImg2 {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .ft {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+  .ht, .ft {
+    width: 80%;
+    text-align: center;
+  }
+  .journey .wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    text-align: center;
+    width: 82%;
+  }
+}
+
+@media (max-width: 480px) {
+  .headerContent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .headerFace {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
 }

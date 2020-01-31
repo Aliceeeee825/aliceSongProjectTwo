@@ -15,154 +15,20 @@ $navColor: #B9DDE7;
 $white: #F6F6F6;
 $black: #171717;
 
-
-h1, h2, h3, h4, li, button, .logo{
-    font-family: 'Oswald', sans-serif;
-    font-weight: bold;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-}
-
-h1{
-    font-size: 80px;
-    line-height: 92px;
-}
-
-h2, .logo{
-    font-size: 42px;
-}
-
-h3{
-    font-size: 32px;
-    margin: 0;
-}
-
-h4{
-    font-size: 24px;
-    margin: 0;
-}
-
-ul{
-    padding: 0;
-    margin: 0;
-}
-
-li{
-    list-style-type: none;
-    font-size: 20px;
-    text-align: right;
-    line-height: 29px;
-    text-decoration: none;
-}
-
-a{
-    text-decoration: none;
-    color: $black;
-    font-size: 20px;
-}
-
-button{
-    font-size: 20px;
-    text-align: center;
-    line-height: 32px;
-    background-color: $buttonColor;
-    border: none;
-    padding: 1% 3%;
-}
-
-p{
-    font-family: 'Cabin', sans-serif;
-    font-size: 20px;
-    line-height: 32px;
-}
-
-img{
-    width: 100%;
-    display: block;
-}
-
-.wrapper{
-    max-width: 1280px;
-    margin: 0 auto;
-}
-
-.navBar{
-    background-color: $navColor;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    nav{
-        width: 25%;
-        ul{
-        display: flex;
-        padding: 2% 5%;
-        justify-content: space-evenly;
-        } //ul ends here
-    }//nav ends
-    .logo{
-        padding: 2% 5%;
-    }//logo ends here
-} 
-
-.whiteNav a{
-    color: white;
-}
-
-::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-    color:$black;
-}
-:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-    color: $black;
-    opacity:1;
-}
-::-moz-placeholder { /* Mozilla Firefox 19+ */
-    color:$black;
-    opacity:  1;
-}
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color:$black;
-}
-::-ms-input-placeholder { /* Microsoft Edge */
-    color:$black;
-}
-::placeholder { /* Most modern browsers support this now. */
-    color:$black;
-    opacity: 1;
-}
-
-// form placeholder style
-// found this on stackflow (https://stackoverflow.com/questions/2610497/change-an-html5-inputs-placeholder-color-with-css)
-form{
-    width: 54%;
-    margin-right: 8%;
-    button{
-        width: 100%;
-        margin: 2% 0 15%;
+@mixin phoneSize{
+    @media(max-width: 480px){
+        @content
     }
-}
+};
 
-input[type="text"],
-input[type='email'],
-textarea{
-    border: none;
-    padding: 4%;
-    color: $black;
-}
+@mixin tabletSize{
+    @media(max-width: 768px){
+        @content
+    }
+};
 
-input[type="text"],
-input[type='email']{
-    width: 48%;
-}
-
-input[type="text"]{
-    margin: 2% 1% 2% 0;
-}
-
-input[type="email"]{
-    margin: 2% 0 2% 2%;
-}
-
-textarea{
-    width: 100%;
+@mixin largerTablet{
+    @media(max-width: 940px){
+        @content
+    }
 }
