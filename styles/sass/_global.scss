@@ -91,6 +91,78 @@ img{
     color: white;
 }
 
+//hamburger menu
+.hamburger-menu{
+    // float: right;
+    margin: 0 2% 0 82%;
+    text-align: right;
+    // justify-content: flex-end;
+    // flex-direction: column;
+    width: 10%;
+    display: none;
+    position: relative;
+}
+
+.hamburger-menu i{
+    font-size: 2rem;
+    padding: 5% 0;
+}
+
+.hamburger-menu ul{
+    padding:0;
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(185,213,231, 0.5);
+}
+
+.hamburger-menu:hover ul,
+.hamburger-menu:active ul,
+.hamburger-menu:focus ul{
+    display: block;
+}
+
+.hamburger-menu li{
+    display: block;
+    padding:5% 0;
+}
+
+// .hamburger-menu li:nth-of-type(1){
+//     left: 5%;
+// }
+
+
+.hamburger-menu i:hover .hamburger-menu ul{
+    display: inline-block;
+}
+
+.bCHamburger{
+    background-color: $navColor;
+    width: 100%;
+    display: none;
+    position: relative;
+}
+
+.hamburgerLogo{
+    position: absolute;
+    top: 20%;
+    left: 5%;
+}
+
+@include tabletSize{
+    .bCHamburger{
+        display: block;
+    }
+    .hamburger-menu{
+        display: block;
+    }
+    .navBar{
+        display: none;
+    }
+}
+
+
+//input placeholder style for different browsers
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     color:$black;
 }

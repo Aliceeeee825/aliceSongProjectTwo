@@ -3,7 +3,7 @@
     .title img{
         display: none;
     }
-}
+};
 
 @include largerTablet{
     .aboutImg1{
@@ -17,7 +17,7 @@
     .journeyPar{
         margin: 0 5%;
     }
-}
+};
 
 @include tabletSize{
     h1{
@@ -69,18 +69,145 @@
         text-align: center;
         width: 82%;
     }
-}
+};
 
 @include phoneSize{
     .headerContent{
         display: flex;
         flex-direction: column-reverse;
         // flex-wrap: wrap;
+        h1{
+            top: 55%;
+            left: 30%;
+        }
     }
 
     .headerFace{
         box-shadow: none;
+        left: 34%;
+        width: 35%;
+        top: 9%;
+    }
+
+    .photos, .midAbout, .midBlog, .midContact{
+        width: 90%;
+        margin-left: 9%;
+    }
+}
+
+@media(max-width: 376px){
+    .headerFace{
+        width: 45%;
+        left: 31%;
+        width: 45%;
+    }
+
+    .headerContent h1{
+        left: 25%;
+    }
+}
+
+//blog responsive
+@include tabletSize{
+    .maggie,.daisy{
+        flex-wrap: wrap;
+    }
+    .imgDiv{
+        width: 100%;
+        img{
+            margin: 0 auto;
+            padding-bottom: 5%;
+        }
+    }
+
+    .maggie p, .daisy p{
+        width: 90%;
+    }
+
+    .blogForm form{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .blogForm input[type="text"],
+    .blogForm input[type="email"]{
+        width: 100%;
+    }
+
+    .blogForm input[type="email"]{
+        margin: 2% 0 4%;
+    }
+};
+
+@include phoneSize{
+    .blogMain .blogTop{
+        flex-wrap: wrap-reverse;
+    }
+
+    .blogContent, .sideBar{
+        width: 90%;
+    }
+
+    .blogContent{
+        margin: 10% 2%;
+    }
+
+    .maggie, .daisy{
+        width: 82%;
+        margin-top: 5%;
+    }
+
+    .blogForm form{
+        width: 82%;
+    }
+};
+
+//contact responsive
+@media(max-width: 986px){
+    .contactMain{
+        input[type="text"]{
+            width: 100%;
+        }
+
+        input[type="email"]{
+            margin:2% 0 4%;
+            width: 100%;
+        }
+    }
+}
+
+@include tabletSize{
+    .contactMain .wrapper{
+        flex-direction: column;
+    }
+
+    .contactAside,
+    .contactAside li{
+        text-align: center;
     }
 
     
+    .contactAside {
+        border-bottom: 5px solid $picBg1;
+        .socialMedia ul{
+        justify-content: center;
+        margin-left: 10%;
+        }
+    }
+
+    .contactMain form{
+        width: 100%;
+        margin: 3% 0;
+    }
+}
+
+@include phoneSize{
+    .contactAside{
+        margin-top: 10%;
+    }
+
+    .contactHeader h1{
+        font-size: 40px;
+        bottom: -12%;
+    }
 }
