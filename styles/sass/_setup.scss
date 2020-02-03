@@ -16,19 +16,19 @@ $white: #F6F6F6;
 $black: #171717;
 
 @mixin phoneSize{
-    @media(max-width: 480px){
+    @media(max-width: 30rem){
         @content
     }
 };
 
 @mixin tabletSize{
-    @media(max-width: 768px){
+    @media(max-width: 48rem){
         @content
     }
 };
 
 @mixin largerTablet{
-    @media(max-width: 940px){
+    @media(max-width: 58.75rem){
         @content
     }
 }

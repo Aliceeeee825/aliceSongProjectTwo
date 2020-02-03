@@ -1,9 +1,15 @@
 //responsive design for home page
-@media(max-width:1200px){
+@media(max-width:75rem){
     .title img{
         display: none;
     }
 };
+
+@media(max-width: 56.25rem){
+    .about .wrapper{
+        height: 140vh;
+    }
+}
 
 @include largerTablet{
     .aboutImg1{
@@ -17,7 +23,7 @@
     .journeyPar{
         margin: 0 5%;
     }
-};
+}
 
 @include tabletSize{
     h1{
@@ -95,7 +101,7 @@
     }
 }
 
-@media(max-width: 376px){
+@media(max-width: 23.5rem){
     .headerFace{
         width: 45%;
         left: 31%;
@@ -163,7 +169,7 @@
 };
 
 //contact responsive
-@media(max-width: 986px){
+@media(max-width: 61.625rem){
     .contactMain{
         input[type="text"]{
             width: 100%;
@@ -211,3 +217,10 @@
         bottom: -12%;
     }
 }
+
+@media (max-zoom:2){
+    .headerContent h1{
+        color: red;
+    }
+}
+// https://www.w3.org/Graphics/SVG/WG/wiki/Proposals/Zoom_feature_for_media_queries#min.2Fmax-zoom_property_for_CSS_Media_Queries

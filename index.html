@@ -10,6 +10,11 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+    <a href="#about" class="skip-link">Skip to about section.</a>
+    <a href="blog.html" class="skip-link">Skip to blog page.</a>
+    <a href="contact.html" class="skip-link">Skip to contact page.</a>
+    <!-- get it from the note in the navigation section; the link is https://github.com/HackerYou/bootcamp-notes/blob/master/css/navigations.md  -->
+    
     <header class="homeHeader">
         <div class="wrapper">
             <div class="navBar">
@@ -31,7 +36,7 @@
             </div>
 
             <nav class="hamburger-menu">
-                <i class="fas fa-bars"></i>
+                <i class="fas fa-bars" tabindex="0" role="menu" aria-haspopup="true" aria-expanded="true"></i>
                 <span class="visuallyhidden">menu</span>
                 <ul>
                     <li><a href="#">home</a></li>

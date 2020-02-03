@@ -26,6 +26,12 @@
     }
 }
 
+.contactAside i:hover,
+.contactAside i:active,
+.contactAside i:focus{
+    transform: scale(1.5);
+}
+
 .socialMedia{
     ul{
         display: flex;
