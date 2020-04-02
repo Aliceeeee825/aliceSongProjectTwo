@@ -13,7 +13,7 @@
 
 /* get it from the note in the navigation section; the link is https://github.com/HackerYou/bootcamp-notes/blob/master/css/navigations.md */
 
-h1, h2, h3, h4, li, button, .logo{
+h1, h2, h3, h4, li, button, .logo, .hamburgerLogo{
     font-family: 'Oswald', sans-serif;
     font-weight: bold;
     letter-spacing: 1px;
@@ -32,10 +32,6 @@ h2, .logo{
 
 h3{
     font-size: 2rem;
-}
-
-h4{
-    font-size: 1.5rem;
 }
 
 ul{
@@ -67,12 +63,17 @@ button{
     padding: 1% 3%;
     position: relative;
     cursor: pointer;
+    transition: all 0.5s;
 }
 
 button:hover,
-button:active,
 button:focus{
-    top: 1%;
+    transform: scale(1.2);
+}
+
+button:active{
+    color:$buttonColor;
+    background: black;
 }
 
 p{
@@ -144,11 +145,13 @@ img{
     position: absolute;
     z-index: 1;
     background-color: rgba(185,213,231, 0.5);
+    right: -17px;
+    top: 5px
 }
 
-.hamburger-menu:hover ul,
-.hamburger-menu:active ul,
-.hamburger-menu:focus ul{
+.hamburger-menu i:hover ul,
+.hamburger-menu i:active ul,
+.hamburger-menu i:focus ul{
     opacity: 1;
     cursor: pointer;
 }
@@ -174,6 +177,7 @@ img{
 
 .hamburgerLogo{
     position: absolute;
+    font-size: 1.5rem;
     top: 20%;
     left: 5%;
 }

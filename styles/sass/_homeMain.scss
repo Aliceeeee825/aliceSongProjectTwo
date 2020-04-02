@@ -14,6 +14,12 @@
 
 
 //middle nav styles
+.midImg{
+    background-image: url(../harper-assets/home-image-2.jpg);
+    height: 300px;
+    background-size: cover;
+    background-attachment: fixed;
+}
 .midNav{
     background-color: $white;
 }

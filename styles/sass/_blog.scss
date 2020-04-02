@@ -80,6 +80,12 @@
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
+    button:hover,
+    button:focus{
+        transform: scale(1);
+        color:$buttonColor;
+        background: black;
+    }
 }
 
 
